@@ -1,0 +1,133 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+
+    background: var(--gray-500);
+    border-radius: 8px;
+    padding: 16px;
+
+    border: 1px solid var(--gray-400);
+    margin-bottom: 12px;
+
+    max-width: 736px;
+
+    box-sizing: border-box;
+    margin: 0 auto 12px auto;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+
+    width: 100%;
+}
+
+
+.content p {
+    font-size: 14px;
+    color: var(--gray-100);
+}
+
+.content button {
+    background: transparent;
+    height: 24px;
+    width: 24px;
+    border: 0;
+}
+
+.content button:hover {
+    cursor: pointer;
+    background: var(--gray-400);
+    border-radius: 4px;
+}
+
+.content button:hover path {
+    color: var(--red-500);
+}
+
+.wrapper label {
+    display: block;
+    position: relative;
+    padding-left: 20px;
+}
+
+.wrapper label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.wrapper label input:checked~.checkmark {
+    background-color: var(--purple-900);
+    border: 0;
+}
+
+.wrapper label input:checked~.checkmark~.checkmark:after {
+    display: block;
+}
+
+.wrapper label p {
+    margin-left: 16px;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    background-color: transparent;
+    border: 1px solid var(--blue-500);
+    border-radius: 50%;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 6px;
+    top: 3px;
+    width: 3px;
+    height: 6px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.containerEmpty {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 1px solid var(--gray-400);
+    border-radius: 8px;
+    margin: 0 auto;
+
+    max-width: 736px;
+}
+
+.containerEmpty img {
+    height: 56px;
+    margin-top: 64px;
+    margin-bottom: 16px;
+}
+
+.containerEmpty p {
+    margin: 0 auto;
+    color: var(--gray-300);
+    line-height: 140%;
+    text-align: center;
+}
+
+.containerEmpty p span {
+    display: block;
+    font-weight: bold;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}

@@ -1,0 +1,37 @@
+.container {
+    max-width: 736px;
+    margin: 0 auto;
+    padding-top: 54px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.taskCreated {
+    color: var(--blue-500);
+    font-weight: bold;
+}
+
+.taskCreated span {
+    background: var(--gray-400);
+    color: var(--gray-100);
+    padding: 2px 10px;
+    border-radius: 999px;
+    margin-left: .5rem;
+}
+
+.taskDone {
+    color: var(--purple-500);
+    font-weight: bold;
+}
+
+.taskDone span {
+    background: var(--gray-400);
+    color: var(--gray-100);
+    padding: 2px 10px;
+    border-radius: 999px;
+    margin-left: .5rem;
+}
